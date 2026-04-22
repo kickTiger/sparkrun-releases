@@ -1,0 +1,84 @@
+name: Upgrade Failure Report
+description: Report update, download, install, or post-upgrade startup failures.
+title: "[Upgrade]: "
+labels:
+  - upgrade
+  - triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form when SparkRun cannot check, download, install, or start after an update.
+  - type: input
+    id: current_version
+    attributes:
+      label: Current version
+      placeholder: "0.2.0"
+    validations:
+      required: true
+  - type: input
+    id: target_version
+    attributes:
+      label: Target version
+      placeholder: "0.2.1"
+    validations:
+      required: false
+  - type: dropdown
+    id: channel
+    attributes:
+      label: Update channel
+      options:
+        - stable
+        - beta
+        - not sure
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Windows
+        - macOS
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: failure_stage
+    attributes:
+      label: Failure stage
+      options:
+        - Check update
+        - Download update
+        - Install update
+        - Relaunch after update
+        - Manual installer
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: message
+    attributes:
+      label: Error message
+      description: Paste the exact error message if one is shown.
+    validations:
+      required: false
+  - type: textarea
+    id: steps
+    attributes:
+      label: What did you do before it failed?
+      placeholder: |
+        1. Open Settings
+        2. Click Check Updates
+        3. Click Download and Install
+    validations:
+      required: true
+  - type: checkboxes
+    id: fallback
+    attributes:
+      label: Fallback attempt
+      options:
+        - label: I tried downloading the installer manually from Releases.
+        - label: I created or have an upgrade backup.
+        - label: I can open the app after reinstalling.
+

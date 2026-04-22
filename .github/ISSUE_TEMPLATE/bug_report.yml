@@ -1,0 +1,61 @@
+name: Bug Report
+description: Report a reproducible problem in SparkRun.
+title: "[Bug]: "
+labels:
+  - bug
+  - triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve SparkRun. Please avoid sharing private notes, activation codes, API keys, or database files.
+  - type: input
+    id: version
+    attributes:
+      label: SparkRun version
+      description: You can find this in the app About dialog or settings page.
+      placeholder: "0.2.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Windows
+        - macOS
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the problem clearly.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the exact steps that trigger the problem.
+      placeholder: |
+        1. Open ...
+        2. Click ...
+        3. See ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Screenshots or diagnostics
+      description: Attach screenshots or a redacted diagnostic bundle if available.
+    validations:
+      required: false
+
