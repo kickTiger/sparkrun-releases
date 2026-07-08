@@ -1,58 +1,92 @@
 # SparkRun Releases
 
-这里是 SparkRun（闪行）的公开发布与反馈仓库。
+![Release](https://img.shields.io/github/v/release/kickTiger/sparkrun-releases?label=release&sort=semver)
+![License](https://img.shields.io/badge/license-Commercial%20Proprietary-orange)
+![Platforms](https://img.shields.io/badge/platforms-macOS%20%7C%20Windows-blue)
+![Auto Update](https://img.shields.io/badge/auto--update-Tauri%20Updater-brightgreen)
+![Issues](https://img.shields.io/github/issues/kickTiger/sparkrun-releases?label=issues)
 
-SparkRun 是一款面向个人用户与重度效率用户的桌面应用，用来把灵感、任务、项目事项和方案持续推进到结果。
+Official release, auto-update, and user feedback repository for **SparkRun**.
 
-## 下载
+SparkRun is a commercial desktop application for capturing ideas, organizing tasks, and moving personal projects from thought to result.
 
-请在右侧或上方的 **Releases** 页面下载最新版本。
+Product website: [https://sparkrun.net/](https://sparkrun.net/)
 
-推荐优先下载最新稳定版：
+## Downloads
 
-- Windows：下载 `.exe` 安装包
-- macOS：下载对应架构的安装包
+Download the latest version from the **Releases** page.
 
-如果你不确定该下载哪个文件，请优先选择 Release 说明中标注的推荐安装包。
+Recommended installers:
 
-## 更新
+- **Windows**: download the `.exe` installer.
+- **macOS**: download the macOS installer or package matching your device architecture.
 
-SparkRun 支持应用内检查更新。
+If you are not sure which file to choose, use the installer marked as recommended in the release notes.
 
-如果应用内更新失败，请：
+## Auto Updates
 
-1. 到 Releases 页面手动下载最新安装包
-2. 覆盖安装
-3. 如仍失败，请提交 “Upgrade Failure Report”
+SparkRun supports in-app update checks.
 
-## 反馈问题
+The application reads update metadata from the latest release assets, including:
 
-请根据问题类型选择合适入口：
+- `latest.json`
+- platform-specific installer packages
+- updater packages and signature files
 
-- 功能异常、崩溃、数据问题：提交 Bug Report
-- 检查更新、下载、安装、升级后启动失败：提交 Upgrade Failure Report
-- 功能建议和产品想法：提交 Feature Request
-- 一般使用问题：优先使用 Discussions
+If in-app update fails, please:
 
-## 提交反馈前请准备
+1. Open the latest release page.
+2. Download the newest installer manually.
+3. Install it over the existing app.
+4. If the issue continues, open an **Upgrade Failure Report**.
 
-为了更快定位问题，建议提供：
+## Languages
 
-- SparkRun 版本号
-- 操作系统和版本
-- 问题发生前后的操作步骤
-- 是否可以稳定复现
-- 错误截图或诊断包
+This repository uses **English** as the primary public release language.
 
-## 隐私提醒
+Multilingual release information may be added when needed:
 
-提交 Issue 时请不要上传：
+- English: primary release notes and download instructions.
+- 简体中文: selected product notes, troubleshooting guidance, or user support replies when helpful.
 
-- 激活码
-- API Key
-- 私密笔记正文
-- 数据库文件
-- 包含个人隐私的完整日志
+Please keep issue titles and reports in English when possible. Chinese reports are also accepted.
 
-如需分享诊断信息，请优先使用 SparkRun 内置的“导出诊断包”，并确认其中不包含敏感内容。
+## Feedback
 
+Use the issue templates for public feedback:
+
+- **Bug Report**: app bugs, crashes, data issues, or unexpected behavior.
+- **Upgrade Failure Report**: update checks, downloads, installation, or launch failures after upgrade.
+- **Feature Request**: product ideas and workflow suggestions.
+
+For general questions, use Discussions when available.
+
+## Before Opening an Issue
+
+Please include:
+
+- SparkRun version.
+- Operating system and version.
+- Steps to reproduce the issue.
+- Whether the issue happens consistently.
+- Screenshots or diagnostic information when useful.
+
+## Privacy Notice
+
+Do not upload or paste:
+
+- License keys or activation codes.
+- API keys, tokens, passwords, or secrets.
+- Private notes, personal documents, or sensitive task content.
+- Database files.
+- Full logs that may contain private information.
+
+If you share a diagnostic bundle, review it first and remove any sensitive information.
+
+## License
+
+SparkRun is commercial proprietary software.
+
+This repository is for official releases, update metadata, and user feedback only. It is **not** an open-source source-code repository.
+
+See [LICENSE](./LICENSE) for copyright and usage terms.
