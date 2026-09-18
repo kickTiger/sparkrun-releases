@@ -9,6 +9,7 @@ body:
     attributes:
       value: |
         Use this form when SparkRun cannot check, download, install, or start after an update.
+        Do not submit activation codes, credentials or API keys, databases, private notes, or complete unreviewed logs. Redact personal and confidential details before posting.
   - type: input
     id: current_version
     attributes:
@@ -81,4 +82,3 @@ body:
         - label: I tried downloading the installer manually from Releases.
         - label: I created or have an upgrade backup.
         - label: I can open the app after reinstalling.
-
