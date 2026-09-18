@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for helping improve SparkRun. Please avoid sharing private notes, activation codes, API keys, or database files.
+        Thanks for helping improve SparkRun. Do not submit activation codes, credentials or API keys, databases, private notes, or complete unreviewed logs. Redact personal and confidential details before posting.
   - type: input
     id: version
     attributes:
@@ -58,4 +58,3 @@ body:
       description: Attach screenshots or a redacted diagnostic bundle if available.
     validations:
       required: false
-
