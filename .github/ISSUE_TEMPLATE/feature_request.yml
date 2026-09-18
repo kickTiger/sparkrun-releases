@@ -5,6 +5,10 @@ labels:
   - feature
   - triage
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not submit activation codes, credentials or API keys, databases, private notes, or complete unreviewed logs. Redact personal and confidential details before posting.
   - type: textarea
     id: problem
     attributes:
@@ -41,4 +45,3 @@ body:
       description: Optional. Tell us how you work around this today.
     validations:
       required: false
-
